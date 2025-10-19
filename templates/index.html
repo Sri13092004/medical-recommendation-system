@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Disease Prediction & Medical Recommendation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f5;
+            text-align: center;
+            padding: 40px;
+        }
+        h2 { color: #222; }
+        .input-box {
+            width: 60%;
+            margin: 20px auto;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #888;
+        }
+        button {
+            background: #0b5394;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover { background: #073763; }
+
+        .result-box {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 70%;
+            margin: 20px auto;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+        .message { color: red; font-weight: bold; }
+        .label { font-weight: bold; color: #333; }
+    </style>
+</head>
+<body>
+
+    <h2>Disease Prediction & Medical Recommendation</h2>
+    <form action="/predict" method="post" class="input-box">
+        <input type="text" name="symptoms" placeholder="E.g. headache, mild fever, nausea..." required>
+        <br>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if message %}
+        <p class="message">{{ message }}</p>
+    {% endif %}
+
+    {% if prediction %}
+    <div class="result-box">
+        <h3>Predicted Results</h3>
+        <p><span class="label">Disease:</span> {{ disease }}</p>
+        <p><span class="label">Description:</span> {{ description }}</p>
+        <p><span class="label">Precautions:</span> {{ precautions }}</p>
+        <p><span class="label">Medications:</span> {{ medications }}</p>
+        <p><span class="label">Workout:</span> {{ workout }}</p>
+        <p><span class="label">Diet:</span> {{ diet }}</p>
+        <p><span class="label">Matched Symptoms:</span> {{ symptoms }}</p>
+        
+        {% if confidence %}
+        <hr style="margin: 20px 0;">
+        <h4>Analysis Details</h4>
+        <p><span class="label">Overall Confidence:</span> {{ confidence }}%</p>
+        {% endif %}
+        
+        {% if rationale %}
+        <p><span class="label">Reasoning:</span> {{ rationale }}</p>
+        {% endif %}
+        
+        {% if kg_support %}
+        <p><span class="label">Knowledge Graph Support:</span> {{ kg_support }}%</p>
+        {% endif %}
+        
+        {% if llm_confidence %}
+        <p><span class="label">LLM Verification Confidence:</span> {{ llm_confidence }}%</p>
+        {% endif %}
+    </div>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,32 @@
+# Enhanced Medical Recommendation System Requirements
+# Core dependencies
+flask==3.0.3
+pandas==2.2.3
+numpy==1.26.4
+scikit-learn==1.4.1.post1
+fuzzywuzzy==0.18.0
+python-Levenshtein==0.26.1
+
+# LLM and AI dependencies
+openai>=1.51.0
+python-dotenv>=1.0.1
+torch>=2.2.0
+torch-geometric>=2.4.0
+
+# Graph processing
+networkx==3.2.1
+scipy==1.14.1
+
+# Data processing
+joblib==1.4.2
+requests==2.24.0
+
+# Optional: For enhanced visualization
+matplotlib==3.8.2
+plotly==5.17.0
+dash==2.14.2
+
+# Development dependencies
+pytest==7.4.3
+black==23.11.0
+flake8==6.1.0
