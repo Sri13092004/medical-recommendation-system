@@ -60,31 +60,101 @@
 
     {% if prediction %}
     <div class="result-box">
-        <h3>Predicted Results</h3>
-        <p><span class="label">Disease:</span> {{ disease }}</p>
-        <p><span class="label">Description:</span> {{ description }}</p>
-        <p><span class="label">Precautions:</span> {{ precautions }}</p>
-        <p><span class="label">Medications:</span> {{ medications }}</p>
-        <p><span class="label">Workout:</span> {{ workout }}</p>
-        <p><span class="label">Diet:</span> {{ diet }}</p>
-        <p><span class="label">Matched Symptoms:</span> {{ symptoms }}</p>
-        
-        {% if confidence %}
+        <h3 style="margin-top: 0;">Predicted Results</h3>
+
+        <div style="margin-bottom: 12px;">
+            <div class="label">Disease</div>
+            <div>{{ disease }}</div>
+        </div>
+
+        <div style="margin-bottom: 12px;">
+            <div class="label">Description</div>
+            <div style="line-height: 1.5;">{{ description }}</div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;">
+            <div>
+                <div class="label">Precautions</div>
+                {% if precautions %}
+                    {% set prec_list = precautions if precautions is sequence and precautions is not string else precautions.split(',') %}
+                    <ul>
+                        {% for p in prec_list %}
+                        {% if p|trim %}<li>{{ p|trim }}</li>{% endif %}
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <div>Not available.</div>
+                {% endif %}
+            </div>
+            <div>
+                <div class="label">Medications</div>
+                {% if medications %}
+                    {% set med_list = medications if medications is sequence and medications is not string else medications.split(',') %}
+                    <ul>
+                        {% for m in med_list %}
+                        {% if m|trim %}<li>{{ m|trim }}</li>{% endif %}
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <div>Not available.</div>
+                {% endif %}
+            </div>
+            <div>
+                <div class="label">Workout</div>
+                {% if workout %}
+                    {% set w_list = workout if workout is sequence and workout is not string else workout.split(',') %}
+                    <ul>
+                        {% for w in w_list %}
+                        {% if w|trim %}<li>{{ w|trim }}</li>{% endif %}
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <div>Not available.</div>
+                {% endif %}
+            </div>
+            <div>
+                <div class="label">Diet</div>
+                {% if diet %}
+                    {% set d_list = diet if diet is sequence and diet is not string else diet.split(',') %}
+                    <ul>
+                        {% for d in d_list %}
+                        {% if d|trim %}<li>{{ d|trim }}</li>{% endif %}
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <div>Not available.</div>
+                {% endif %}
+            </div>
+        </div>
+
+
+        <div style="margin-top: 12px;">
+            <div class="label">Matched Symptoms</div>
+            <div>{{ symptoms|join(', ') }}</div>
+        </div>
+
+        {% if rationale or kg_support %}
         <hr style="margin: 20px 0;">
         <h4>Analysis Details</h4>
-        <p><span class="label">Overall Confidence:</span> {{ confidence }}%</p>
-        {% endif %}
-        
+        {% if kg_support %}<p><span class="label">Knowledge Graph Support:</span> {{ kg_support }}%</p>{% endif %}
         {% if rationale %}
         <p><span class="label">Reasoning:</span> {{ rationale }}</p>
         {% endif %}
-        
-        {% if kg_support %}
-        <p><span class="label">Knowledge Graph Support:</span> {{ kg_support }}%</p>
         {% endif %}
-        
-        {% if llm_confidence %}
-        <p><span class="label">LLM Verification Confidence:</span> {{ llm_confidence }}%</p>
+
+        {% if uncertain %}
+        <hr style="margin: 20px 0;">
+        <h4>We need a bit more information</h4>
+        {% if next_questions and next_questions|length > 0 %}
+        <ul>
+            {% for q in next_questions %}
+            <li>{{ q }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% if differential and differential|length > 0 %}
+        <p><span class="label">Top differentials:</span> {{ differential|join(', ') }}</p>
+        {% endif %}
         {% endif %}
     </div>
     {% endif %}

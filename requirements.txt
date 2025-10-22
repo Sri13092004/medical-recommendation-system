@@ -21,7 +21,7 @@ scipy==1.14.1
 joblib==1.4.2
 requests==2.24.0
 
-# Optional: For enhanced visualization
+# Visualization dependencies
 matplotlib==3.8.2
 plotly==5.17.0
 dash==2.14.2

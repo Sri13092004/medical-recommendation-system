@@ -406,6 +406,32 @@ class KnowledgeGraphFusion:
         self.gat_model.load_state_dict(checkpoint['model_state_dict'])
         print(f"GAT model loaded from {filepath}")
 
+# ------------------------------
+# Minimal helpers to load/save/train weights externally
+# ------------------------------
+
+import os
+
+def load_gat_weights(path: str):
+    try:
+        if os.path.exists(path):
+            return torch.load(path, map_location="cpu")
+    except Exception:
+        pass
+    return None
+
+def save_gat_weights(state_dict, path: str) -> bool:
+    try:
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        torch.save(state_dict, path)
+        return True
+    except Exception:
+        return False
+
+def train_gat_stub(knowledge_graph: HealthcareKnowledgeGraph) -> dict:
+    """Placeholder that returns an empty state dict. Replace with real training."""
+    return {}
+
 class NodeEncoder:
     """Encode nodes into feature vectors"""
     

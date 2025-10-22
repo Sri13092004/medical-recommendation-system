@@ -1,0 +1,2484 @@
+{
+  "nodes": [
+    [
+      "Fungal infection",
+      {}
+    ],
+    [
+      "itching",
+      {}
+    ],
+    [
+      "skin_rash",
+      {}
+    ],
+    [
+      "nodal_skin_eruptions",
+      {}
+    ],
+    [
+      "dischromic _patches",
+      {}
+    ],
+    [
+      "Allergy",
+      {}
+    ],
+    [
+      "continuous_sneezing",
+      {}
+    ],
+    [
+      "shivering",
+      {}
+    ],
+    [
+      "chills",
+      {}
+    ],
+    [
+      "watering_from_eyes",
+      {}
+    ],
+    [
+      "GERD",
+      {}
+    ],
+    [
+      "stomach_pain",
+      {}
+    ],
+    [
+      "acidity",
+      {}
+    ],
+    [
+      "ulcers_on_tongue",
+      {}
+    ],
+    [
+      "vomiting",
+      {}
+    ],
+    [
+      "cough",
+      {}
+    ],
+    [
+      "Chronic cholestasis",
+      {}
+    ],
+    [
+      "yellowish_skin",
+      {}
+    ],
+    [
+      "nausea",
+      {}
+    ],
+    [
+      "loss_of_appetite",
+      {}
+    ],
+    [
+      "Drug Reaction",
+      {}
+    ],
+    [
+      "burning_micturition",
+      {}
+    ],
+    [
+      "spotting_ urination",
+      {}
+    ],
+    [
+      "Peptic ulcer diseae",
+      {}
+    ],
+    [
+      "abdominal_pain",
+      {}
+    ],
+    [
+      "passage_of_gases",
+      {}
+    ],
+    [
+      "indigestion",
+      {}
+    ],
+    [
+      "AIDS",
+      {}
+    ],
+    [
+      "muscle_wasting",
+      {}
+    ],
+    [
+      "patches_in_throat",
+      {}
+    ],
+    [
+      "high_fever",
+      {}
+    ],
+    [
+      "extra_marital_contacts",
+      {}
+    ],
+    [
+      "Diabetes",
+      {}
+    ],
+    [
+      "fatigue",
+      {}
+    ],
+    [
+      "weight_loss",
+      {}
+    ],
+    [
+      "restlessness",
+      {}
+    ],
+    [
+      "lethargy",
+      {}
+    ],
+    [
+      "irregular_sugar_level",
+      {}
+    ],
+    [
+      "Gastroenteritis",
+      {}
+    ],
+    [
+      "sunken_eyes",
+      {}
+    ],
+    [
+      "dehydration",
+      {}
+    ],
+    [
+      "diarrhoea",
+      {}
+    ],
+    [
+      "Bronchial Asthma",
+      {}
+    ],
+    [
+      "breathlessness",
+      {}
+    ],
+    [
+      "family_history",
+      {}
+    ],
+    [
+      "Hypertension",
+      {}
+    ],
+    [
+      "headache",
+      {}
+    ],
+    [
+      "chest_pain",
+      {}
+    ],
+    [
+      "dizziness",
+      {}
+    ],
+    [
+      "loss_of_balance",
+      {}
+    ],
+    [
+      "lack_of_concentration",
+      {}
+    ],
+    [
+      "Migraine",
+      {}
+    ],
+    [
+      "blurred_and_distorted_vision",
+      {}
+    ],
+    [
+      "excessive_hunger",
+      {}
+    ],
+    [
+      "Cervical spondylosis",
+      {}
+    ],
+    [
+      "back_pain",
+      {}
+    ],
+    [
+      "weakness_in_limbs",
+      {}
+    ],
+    [
+      "neck_pain",
+      {}
+    ],
+    [
+      "Paralysis (brain hemorrhage)",
+      {}
+    ],
+    [
+      "weakness_of_one_body_side",
+      {}
+    ],
+    [
+      "altered_sensorium",
+      {}
+    ],
+    [
+      "Jaundice",
+      {}
+    ],
+    [
+      "Malaria",
+      {}
+    ],
+    [
+      "sweating",
+      {}
+    ],
+    [
+      "Chicken pox",
+      {}
+    ],
+    [
+      "Dengue",
+      {}
+    ],
+    [
+      "joint_pain",
+      {}
+    ],
+    [
+      "Typhoid",
+      {}
+    ],
+    [
+      "hepatitis A",
+      {}
+    ],
+    [
+      "dark_urine",
+      {}
+    ],
+    [
+      "Hepatitis B",
+      {}
+    ],
+    [
+      "Hepatitis C",
+      {}
+    ],
+    [
+      "yellowing_of_eyes",
+      {}
+    ],
+    [
+      "Hepatitis D",
+      {}
+    ],
+    [
+      "Hepatitis E",
+      {}
+    ],
+    [
+      "Alcoholic hepatitis",
+      {}
+    ],
+    [
+      "swelling_of_stomach",
+      {}
+    ],
+    [
+      "distention_of_abdomen",
+      {}
+    ],
+    [
+      "Tuberculosis",
+      {}
+    ],
+    [
+      "Common Cold",
+      {}
+    ],
+    [
+      "Pneumonia",
+      {}
+    ],
+    [
+      "Dimorphic hemmorhoids(piles)",
+      {}
+    ],
+    [
+      "constipation",
+      {}
+    ],
+    [
+      "pain_during_bowel_movements",
+      {}
+    ],
+    [
+      "pain_in_anal_region",
+      {}
+    ],
+    [
+      "bloody_stool",
+      {}
+    ],
+    [
+      "irritation_in_anus",
+      {}
+    ],
+    [
+      "Heart attack",
+      {}
+    ],
+    [
+      "Varicose veins",
+      {}
+    ],
+    [
+      "cramps",
+      {}
+    ],
+    [
+      "bruising",
+      {}
+    ],
+    [
+      "obesity",
+      {}
+    ],
+    [
+      "swollen_legs",
+      {}
+    ],
+    [
+      "Hypothyroidism",
+      {}
+    ],
+    [
+      "weight_gain",
+      {}
+    ],
+    [
+      "cold_hands_and_feets",
+      {}
+    ],
+    [
+      "mood_swings",
+      {}
+    ],
+    [
+      "Hyperthyroidism",
+      {}
+    ],
+    [
+      "Hypoglycemia",
+      {}
+    ],
+    [
+      "anxiety",
+      {}
+    ],
+    [
+      "Osteoarthristis",
+      {}
+    ],
+    [
+      "knee_pain",
+      {}
+    ],
+    [
+      "hip_joint_pain",
+      {}
+    ],
+    [
+      "swelling_joints",
+      {}
+    ],
+    [
+      "Arthritis",
+      {}
+    ],
+    [
+      "muscle_weakness",
+      {}
+    ],
+    [
+      "stiff_neck",
+      {}
+    ],
+    [
+      "movement_stiffness",
+      {}
+    ],
+    [
+      "painful_walking",
+      {}
+    ],
+    [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      {}
+    ],
+    [
+      "spinning_movements",
+      {}
+    ],
+    [
+      "Acne",
+      {}
+    ],
+    [
+      "pus_filled_pimples",
+      {}
+    ],
+    [
+      "blackheads",
+      {}
+    ],
+    [
+      "scurring",
+      {}
+    ],
+    [
+      "Urinary tract infection",
+      {}
+    ],
+    [
+      "bladder_discomfort",
+      {}
+    ],
+    [
+      "foul_smell_of urine",
+      {}
+    ],
+    [
+      "continuous_feel_of_urine",
+      {}
+    ],
+    [
+      "Psoriasis",
+      {}
+    ],
+    [
+      "skin_peeling",
+      {}
+    ],
+    [
+      "silver_like_dusting",
+      {}
+    ],
+    [
+      "small_dents_in_nails",
+      {}
+    ],
+    [
+      "Impetigo",
+      {}
+    ],
+    [
+      "blister",
+      {}
+    ],
+    [
+      "red_sore_around_nose",
+      {}
+    ],
+    [
+      "yellow_crust_ooze",
+      {}
+    ]
+  ],
+  "edges": [
+    [
+      "Fungal infection",
+      "itching",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Fungal infection",
+      "skin_rash",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Fungal infection",
+      "nodal_skin_eruptions",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Fungal infection",
+      "dischromic _patches",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "itching",
+      "Chronic cholestasis",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "itching",
+      "Drug Reaction",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "itching",
+      "Jaundice",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "itching",
+      "Chicken pox",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "itching",
+      "Hepatitis B",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "skin_rash",
+      "Drug Reaction",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "skin_rash",
+      "Chicken pox",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "skin_rash",
+      "Dengue",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "skin_rash",
+      "Acne",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "skin_rash",
+      "Psoriasis",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "skin_rash",
+      "Impetigo",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Allergy",
+      "continuous_sneezing",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Allergy",
+      "shivering",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Allergy",
+      "chills",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Allergy",
+      "watering_from_eyes",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "continuous_sneezing",
+      "Common Cold",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "chills",
+      "Malaria",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "chills",
+      "Dengue",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "chills",
+      "Typhoid",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "chills",
+      "Tuberculosis",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "chills",
+      "Common Cold",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "chills",
+      "Pneumonia",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "GERD",
+      "stomach_pain",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "GERD",
+      "acidity",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "GERD",
+      "ulcers_on_tongue",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "GERD",
+      "vomiting",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "GERD",
+      "cough",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "stomach_pain",
+      "Drug Reaction",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "acidity",
+      "Migraine",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "vomiting",
+      "Chronic cholestasis",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "vomiting",
+      "Peptic ulcer diseae",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "vomiting",
+      "Gastroenteritis",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "vomiting",
+      "Paralysis (brain hemorrhage)",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "vomiting",
+      "Jaundice",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "vomiting",
+      "Malaria",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "vomiting",
+      "Dengue",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "vomiting",
+      "Typhoid",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "vomiting",
+      "hepatitis A",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "vomiting",
+      "Hepatitis D",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "vomiting",
+      "Hepatitis E",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "vomiting",
+      "Alcoholic hepatitis",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "vomiting",
+      "Tuberculosis",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "vomiting",
+      "Heart attack",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "vomiting",
+      "Hypoglycemia",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "vomiting",
+      "(vertigo) Paroymsal  Positional Vertigo",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "cough",
+      "Bronchial Asthma",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "cough",
+      "Tuberculosis",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "cough",
+      "Common Cold",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "cough",
+      "Pneumonia",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Chronic cholestasis",
+      "yellowish_skin",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Chronic cholestasis",
+      "nausea",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Chronic cholestasis",
+      "loss_of_appetite",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "yellowish_skin",
+      "hepatitis A",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "yellowish_skin",
+      "Hepatitis B",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "yellowish_skin",
+      "Hepatitis C",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "yellowish_skin",
+      "Hepatitis D",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "yellowish_skin",
+      "Hepatitis E",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "yellowish_skin",
+      "Alcoholic hepatitis",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "nausea",
+      "hepatitis A",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "nausea",
+      "Hepatitis C",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "nausea",
+      "(vertigo) Paroymsal  Positional Vertigo",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "loss_of_appetite",
+      "Peptic ulcer diseae",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "loss_of_appetite",
+      "Hepatitis C",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Drug Reaction",
+      "burning_micturition",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Drug Reaction",
+      "spotting_ urination",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "burning_micturition",
+      "Urinary tract infection",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Peptic ulcer diseae",
+      "abdominal_pain",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Peptic ulcer diseae",
+      "passage_of_gases",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Peptic ulcer diseae",
+      "indigestion",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "abdominal_pain",
+      "Alcoholic hepatitis",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "indigestion",
+      "Migraine",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "AIDS",
+      "muscle_wasting",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "AIDS",
+      "patches_in_throat",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "AIDS",
+      "high_fever",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "AIDS",
+      "extra_marital_contacts",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "high_fever",
+      "Bronchial Asthma",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "high_fever",
+      "Jaundice",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "high_fever",
+      "Malaria",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "high_fever",
+      "Chicken pox",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "high_fever",
+      "Typhoid",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "high_fever",
+      "Hepatitis E",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "high_fever",
+      "Common Cold",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "high_fever",
+      "Pneumonia",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "high_fever",
+      "Impetigo",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Diabetes",
+      "fatigue",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Diabetes",
+      "weight_loss",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Diabetes",
+      "restlessness",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Diabetes",
+      "lethargy",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Diabetes",
+      "irregular_sugar_level",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "fatigue",
+      "Bronchial Asthma",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "fatigue",
+      "Jaundice",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "fatigue",
+      "Chicken pox",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "fatigue",
+      "Dengue",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "fatigue",
+      "Typhoid",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "fatigue",
+      "Hepatitis B",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "fatigue",
+      "Hepatitis C",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "fatigue",
+      "Hepatitis D",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "fatigue",
+      "Hepatitis E",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "fatigue",
+      "Tuberculosis",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "fatigue",
+      "Common Cold",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "fatigue",
+      "Pneumonia",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "fatigue",
+      "Varicose veins",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "fatigue",
+      "Hypothyroidism",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "fatigue",
+      "Hyperthyroidism",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "fatigue",
+      "Hypoglycemia",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "weight_loss",
+      "Jaundice",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "weight_loss",
+      "Tuberculosis",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "weight_loss",
+      "Hyperthyroidism",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "restlessness",
+      "Hyperthyroidism",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "lethargy",
+      "Chicken pox",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "lethargy",
+      "Hepatitis B",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "lethargy",
+      "Hypothyroidism",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Gastroenteritis",
+      "sunken_eyes",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Gastroenteritis",
+      "dehydration",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Gastroenteritis",
+      "diarrhoea",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Bronchial Asthma",
+      "breathlessness",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Bronchial Asthma",
+      "family_history",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "breathlessness",
+      "Pneumonia",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "breathlessness",
+      "Heart attack",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Hypertension",
+      "headache",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Hypertension",
+      "chest_pain",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Hypertension",
+      "dizziness",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Hypertension",
+      "loss_of_balance",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Hypertension",
+      "lack_of_concentration",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "headache",
+      "Migraine",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "headache",
+      "Paralysis (brain hemorrhage)",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "headache",
+      "Malaria",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "headache",
+      "Typhoid",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "headache",
+      "Hypoglycemia",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "headache",
+      "(vertigo) Paroymsal  Positional Vertigo",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "chest_pain",
+      "Heart attack",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "dizziness",
+      "Cervical spondylosis",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "loss_of_balance",
+      "Cervical spondylosis",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "loss_of_balance",
+      "(vertigo) Paroymsal  Positional Vertigo",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Migraine",
+      "blurred_and_distorted_vision",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Migraine",
+      "excessive_hunger",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Cervical spondylosis",
+      "back_pain",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Cervical spondylosis",
+      "weakness_in_limbs",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Cervical spondylosis",
+      "neck_pain",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "neck_pain",
+      "Osteoarthristis",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Paralysis (brain hemorrhage)",
+      "weakness_of_one_body_side",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Paralysis (brain hemorrhage)",
+      "altered_sensorium",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Malaria",
+      "sweating",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "sweating",
+      "Heart attack",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "sweating",
+      "Hyperthyroidism",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "sweating",
+      "Hypoglycemia",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Dengue",
+      "joint_pain",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "joint_pain",
+      "hepatitis A",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "joint_pain",
+      "Hepatitis D",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "joint_pain",
+      "Hepatitis E",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "joint_pain",
+      "Osteoarthristis",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "joint_pain",
+      "Psoriasis",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "hepatitis A",
+      "dark_urine",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "dark_urine",
+      "Hepatitis B",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "dark_urine",
+      "Hepatitis D",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Hepatitis C",
+      "yellowing_of_eyes",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Alcoholic hepatitis",
+      "swelling_of_stomach",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Alcoholic hepatitis",
+      "distention_of_abdomen",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Dimorphic hemmorhoids(piles)",
+      "constipation",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Dimorphic hemmorhoids(piles)",
+      "pain_during_bowel_movements",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Dimorphic hemmorhoids(piles)",
+      "pain_in_anal_region",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Dimorphic hemmorhoids(piles)",
+      "bloody_stool",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Dimorphic hemmorhoids(piles)",
+      "irritation_in_anus",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Varicose veins",
+      "cramps",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Varicose veins",
+      "bruising",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Varicose veins",
+      "obesity",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Varicose veins",
+      "swollen_legs",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Hypothyroidism",
+      "weight_gain",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Hypothyroidism",
+      "cold_hands_and_feets",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Hypothyroidism",
+      "mood_swings",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "mood_swings",
+      "Hyperthyroidism",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Hypoglycemia",
+      "anxiety",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Osteoarthristis",
+      "knee_pain",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Osteoarthristis",
+      "hip_joint_pain",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Osteoarthristis",
+      "swelling_joints",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "swelling_joints",
+      "Arthritis",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Arthritis",
+      "muscle_weakness",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Arthritis",
+      "stiff_neck",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Arthritis",
+      "movement_stiffness",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Arthritis",
+      "painful_walking",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "(vertigo) Paroymsal  Positional Vertigo",
+      "spinning_movements",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Acne",
+      "pus_filled_pimples",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Acne",
+      "blackheads",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Acne",
+      "scurring",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Urinary tract infection",
+      "bladder_discomfort",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Urinary tract infection",
+      "foul_smell_of urine",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Urinary tract infection",
+      "continuous_feel_of_urine",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Psoriasis",
+      "skin_peeling",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Psoriasis",
+      "silver_like_dusting",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Psoriasis",
+      "small_dents_in_nails",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Impetigo",
+      "blister",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Impetigo",
+      "red_sore_around_nose",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ],
+    [
+      "Impetigo",
+      "yellow_crust_ooze",
+      {
+        "relation_type": "has_symptom",
+        "weight": 1.0,
+        "confidence": 1.0,
+        "metadata": {}
+      }
+    ]
+  ]
+}
