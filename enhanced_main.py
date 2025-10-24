@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 import networkx as nx
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 from difflib import get_close_matches
 from fuzzywuzzy import process
 from llm_extractor import LLMHealthcareExtractor  # Uses OpenAI API
@@ -19,6 +19,10 @@ df_combined = None
 symptoms_list_processed = {}
 extractor = None
 disease_col = "Disease"
+CHAT_SESSIONS = {}
+KNOWN_DISEASES = set()
+DATA_CACHE = {}
+SIMPLE_CHAT = True
 
 # ------------------------------
 # System Initialization
@@ -103,7 +107,65 @@ def initialize_enhanced_system():
             print("📥 Loaded GAT weights")
     except Exception as e:
         print("⚠️ Could not load-or-build GAT weights:", e)
+    # Build KNOWN_DISEASES from dataset columns if present
+    try:
+        diseases = set()
+        if df_combined is not None and "prognosis" in df_combined.columns:
+            diseases.update(set(df_combined["prognosis"].dropna().unique().tolist()))
+        base_dir = os.path.join(os.getcwd(), "kaggle_dataset")
+        for fname, col in [("description.csv", "Disease"), ("medications.csv", "Disease"),
+                           ("diets.csv", "Disease"), ("precautions_df.csv", "Disease"), ("workout_df.csv", "disease")]:
+            fpath = os.path.join(base_dir, fname)
+            if os.path.exists(fpath):
+                try:
+                    df = pd.read_csv(fpath)
+                    c = col
+                    if c in df.columns:
+                        diseases.update(set(df[c].dropna().unique().tolist()))
+                        DATA_CACHE[fname] = df
+                except Exception:
+                    pass
+        global KNOWN_DISEASES
+        KNOWN_DISEASES = {str(d).strip() for d in diseases if str(d).strip()}
+    except Exception:
+        pass
     return extractor, G, df_combined, symptoms_list_processed
+
+
+# ------------------------------
+# Helper function to load dataset
+# ------------------------------
+def _load_dataset(name: str):
+    try:
+        df = pd.read_csv(os.path.join(os.getcwd(), "kaggle_dataset", name))
+        return df
+    except Exception:
+        return None
+
+
+def get_disease_description(name: str) -> str:
+    try:
+        df = _load_dataset("description.csv")
+        if df is None:
+            return ""
+        col_d = "Disease" if "Disease" in df.columns else ("prognosis" if "prognosis" in df.columns else None)
+        col_desc = "Description" if "Description" in df.columns else None
+        if not col_d or not col_desc:
+            return ""
+        # exact match first
+        row = df.loc[df[col_d] == name]
+        if row.empty:
+            # case-insensitive match
+            row = df.loc[df[col_d].str.lower() == str(name).lower()]
+        if row.empty:
+            return ""
+        desc = str(row.iloc[0][col_desc]).strip()
+        # shorten to a concise one-liner
+        if len(desc) > 220:
+            desc = desc[:217].rsplit(' ', 1)[0] + '...'
+        return desc
+    except Exception:
+        return ""
 
 
 # ------------------------------
@@ -380,9 +442,17 @@ def hybrid_reasoning(symptoms_list):
                 next_q = [s.replace('_', ' ') for s in semantic_expansions[:3]]
                 result["uncertain"] = True
                 result["next_questions"] = [f"Do you also have {q}?" for q in next_q]
-                result["differential"] = top_candidates[:3]
+                result["differential"] = top_candidates[:5]
             else:
                 result["uncertain"] = False
+            # Always expose a differential list
+            if not result.get("differential"):
+                result["differential"] = top_candidates[:5]
+            # Build short descriptions for top 3
+            details = []
+            for d in result.get("differential", [])[:3]:
+                details.append({"disease": d, "description": get_disease_description(d)})
+            result["differential_details"] = details
         print("🤖 LLM reasoning successful.")
         
         # Final safety check - override inappropriate predictions and Unknown results
@@ -436,8 +506,6 @@ def hybrid_reasoning(symptoms_list):
 
 
 # ------------------------------
-# Flask Routes
-# ------------------------------
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -450,6 +518,15 @@ def predict():
         return render_template("index.html", message="⚠️ Please enter symptoms.")
 
     user_symptoms = [s.strip().lower() for s in symptoms_input.split(",") if s.strip()]
+
+    # Disambiguate lay term 'cold' -> common cold-like symptom tokens
+    expanded = []
+    for s in user_symptoms:
+        if s in ["cold", "common cold", "cold symptoms"]:
+            expanded.extend(["runny_nose", "cough", "congestion"])  # do not include 'cold' itself
+        else:
+            expanded.append(s)
+    user_symptoms = expanded
     corrected_symptoms = []
 
     # Try dataset fuzzy match first
@@ -457,7 +534,11 @@ def predict():
         if symptoms_list_processed:
             match, score = process.extractOne(symptom, list(symptoms_list_processed.keys()))
             if score >= 70:
-                corrected_symptoms.append(symptoms_list_processed[match])
+                mapped = symptoms_list_processed[match]
+                # Avoid mis-mapping plain 'cold' to 'cold_hands_and_feets'
+                if symptom == "cold" and "cold_hands" in mapped:
+                    continue
+                corrected_symptoms.append(mapped)
 
     # If nothing matched, fall back to LLM normalization and proceed
     if not corrected_symptoms:
@@ -511,8 +592,142 @@ def predict():
         uncertain=result.get("uncertain", False),
         next_questions=result.get("next_questions", []),
         differential=result.get("differential", []),
+        differential_details=result.get("differential_details", []),
     )
+    return {"reply": msg, "result": {}}
 
+
+# ------------------------------
+# Chatbot JSON API
+# ------------------------------
+@app.route("/chat", methods=["GET", "POST"])
+def chat():
+    if request.method == "GET":
+        # Provide a helpful response instead of 404 when accessed directly in the browser
+        return jsonify({
+            "endpoint": "/chat",
+            "method": "POST",
+            "usage": "Send JSON {message: <text>, session_id: <string>} from the chat widget.",
+            "note": "This is a JSON API used by the in-page chat panel."
+        }), 200
+
+    try:
+        data = request.get_json(silent=True) or {}
+        message = (data.get("message") or "").strip()
+        session_id = (data.get("session_id") or "").strip()
+        if not message:
+            return jsonify({"error": "empty_message"}), 200
+        if not session_id:
+            return jsonify({"error": "missing_session"}), 200
+
+        sess = CHAT_SESSIONS.setdefault(session_id, {"messages": [], "symptoms": [], "profile": {}})
+        sess["messages"].append({"role": "user", "content": message})
+
+        # Short-circuit: simple LLM-only chat
+        if SIMPLE_CHAT:
+            try:
+                system_msg = (
+                    "Give the answer but dont add bold headings in the message."
+                    "You are a concise, safe, and helpful healthcare assistant. "
+                    "Provide general, educational guidance only. Do not give definitive diagnoses. "
+                    "If needed ask for more details."
+                    "Encourage consulting a clinician for urgent or severe issues."
+                )
+                # Use extractor low-level call to set system prompt
+                reply_text = extractor._call_llm(
+                    prompt=message,
+                    system=system_msg,
+                )
+            except Exception as e_inner:
+                print("LLM simple chat error:", e_inner)
+                reply_text = "I'm having trouble right now. Please try again in a moment."
+
+            payload = {
+                "reply": reply_text,
+                "intent": "llm_chat",
+                "symptoms": sess.get("symptoms", []),
+                "disease": "",
+                "confidence": 0.0,
+                "next_questions": [],
+                "differential": [],
+                "warnings": [],
+            }
+            sess["messages"].append({"role": "assistant", "content": payload["reply"]})
+            return jsonify(payload), 200
+
+        # Update profile from message
+        prof = extract_profile_constraints(message)
+        if prof:
+            # merge sets
+            current = sess.get("profile", {})
+            for k, v in prof.items():
+                if isinstance(v, set):
+                    cur = current.setdefault(k, set())
+                    cur.update(v)
+                else:
+                    current[k] = v
+            sess["profile"] = current
+
+        # Classify and extract
+        intent = classify_intent(message)
+        entities = extract_entities(message, intent)
+
+        reply = "Let me know more about your symptoms."
+        result = {}
+        warnings = []
+
+        if intent == "symptom_check":
+            tokens = entities.get("symptoms", [])
+            known = set(sess.get("symptoms", []))
+            for t in tokens:
+                if t not in known:
+                    sess["symptoms"].append(t)
+                    known.add(t)
+            out = handle_symptom_check(sess)
+            reply = out.get("reply") or reply
+            result = out.get("result") or {}
+        elif intent == "disease_treatment":
+            disease = entities.get("disease")
+            out = handle_disease_treatment(disease, sess.get("profile", {}))
+            reply = out.get("reply") or reply
+            result = out.get("result") or {}
+            warnings = out.get("warnings", [])
+        elif intent == "lifestyle_preventive":
+            out = handle_lifestyle_preventive(message)
+            reply = out.get("reply") or reply
+            result = out.get("result") or {}
+        elif intent == "kg_query":
+            out = handle_kg_query(message)
+            reply = out.get("reply") or reply
+            result = out.get("result") or {}
+        else:
+            out = handle_edge_case(message)
+            reply = out.get("reply") or reply
+            result = out.get("result") or {}
+
+        # Compose next questions if available
+        next_q = []
+        if isinstance(result, dict) and result.get("next_questions"):
+            next_q = result.get("next_questions")
+        elif intent == "symptom_check":
+            next_q = result.get("next_questions", []) if isinstance(result, dict) else []
+
+        payload = {
+            "reply": reply,
+            "intent": intent,
+            "symptoms": sess.get("symptoms", []),
+            "disease": result.get("Disease", "") if isinstance(result, dict) else "",
+            "confidence": result.get("Confidence", 0.0) if isinstance(result, dict) else 0.0,
+            "next_questions": next_q,
+            "differential": result.get("differential", []) if isinstance(result, dict) else [],
+            "warnings": warnings,
+        }
+
+        sess["messages"].append({"role": "assistant", "content": payload["reply"]})
+        return jsonify(payload), 200
+    except Exception as e:
+        print("/chat error:", e)
+        return jsonify({"error": "server_error", "details": str(e)}), 200
 
 # ------------------------------
 # Run Flask App
