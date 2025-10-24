@@ -56,14 +56,6 @@ Enter symptoms separated by commas (e.g., "headache, fever, nausea") and get:
 - `templates/index.html` - Web interface
 - `kaggle_dataset/` - Medical datasets
 
-## Deployment
-
-Ready for deployment on:
-- Railway
-- Render
-- Heroku
-- DigitalOcean App Platform
-
 ## API Key
 
 Get your OpenAI API key from: https://platform.openai.com/api-keys
